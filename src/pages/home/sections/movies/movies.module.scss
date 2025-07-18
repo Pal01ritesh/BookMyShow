@@ -1,0 +1,118 @@
+.moviesSection {
+    background-color: #0f0f0f;
+    padding: 2rem;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    a {
+      color: #ccc;
+      font-size: 0.9rem;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat((4, 1fr));
+    gap: 1.5rem;
+  }  
+  .card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+      margin: 0.3rem 0;
+      color: #fff;
+    }
+  
+    p {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+    }
+  
+    .cardFooter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+  
+      button {
+        background-color: #da2343;
+        border: none;
+        color: #fff;
+        padding: 0.4rem 0.8rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.85rem;
+  
+        &:hover {
+          background-color: #da2343;
+        }
+      }
+  
+      span {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.85rem;
+        color: #fff;
+      }
+    }
+  }
+  
+  .showMore {
+    text-align: center;
+    margin-top: 2rem;
+  
+    button {
+      background-color: #da2343;
+      color: white;
+      padding: 0.6rem 1.4rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: black;
+      border-radius: 100px;
+
+      }
+    }
+  }
+  
